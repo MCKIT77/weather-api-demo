@@ -1,0 +1,26 @@
+.header {
+    background-color: blue;
+}
+
+.header-text {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.search-area {
+    outline: 2px solid black;
+}
+
+.main {
+    min-height: 100%;
+    border: 2px solid black;
+}
+
+#search-box {
+    width: 100%;
+}
+
+.search-button {
+    width: 100%;
+}
