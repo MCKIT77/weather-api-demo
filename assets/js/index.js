@@ -12,9 +12,9 @@ http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country
 
 $(document).ready(function () {
     var apiKey = '1fb6ecc7a506e4aafe86c237729982b0';
-    var baseUrl = 'http://api.openweathermap.org/data/2.5/forecast?';
+    var baseUrl = 'https://api.openweathermap.org/data/2.5/forecast?';
     var endOfUrl = '&appid=' + apiKey + '&units=imperial';
-    var geoBaseUrl = 'http://api.openweathermap.org/geo/1.0/direct?q=';
+    var geoBaseUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=';
     var geoEndOfUrl = '&limit=1&appid=' + apiKey;
     var mainUrl = '';
     var searchBtnEl = $('#search-btn');
