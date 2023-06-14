@@ -59,7 +59,14 @@ $(document).ready(function () {
         var cityDisplay = cityPreview[0];
 
         var cityDisplayEl = $('<h2>').text(cityDisplay.toUpperCase());
-        contentEl.append(cityDisplayEl);
+        var currentDate = new Date().toLocaleDateString('en-US', {
+            weekday: 'short',
+            month: 'short',
+            day: 'numeric'
+        });
+        var currentDateEl = $('<h2>').text(currentDate);
+        contentEl.append(cityDisplayEl, currentDateEl);
+
 
         // Save search in local storage
         saveSearch(cityName);
